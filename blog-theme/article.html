@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js" integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Fruit Lovers Blog</title>
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-gradient-to-r from-green-600 via-teal-500 to-blue-400 text-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/fruit-logo.png" class="h-14" alt="Fruit Lovers Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap"><span class="text-yellow-300">Fruit</span>Lovers</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300" aria-controls="navbar-default"
+                aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 text-white rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 text-white rounded md:p-0 hover:bg-yellow-500 hover:text-gray-900" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="articles.html" class="block py-2 px-3 text-white rounded md:p-0 hover:bg-yellow-500 hover:text-gray-900">All Articles</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 px-3 text-white rounded md:p-0 hover:bg-yellow-500 hover:text-gray-900">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mx-auto max-w-screen-lg mt-10 px-8">
+        <a href="articles.html" class="inline-block bg-gray-200 p-2 mb-6 rounded-lg hover:bg-yellow-600 hover:text-white">Back To Articles</a>
+        <article>
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">The Best Fruits to Eat in 2024</h1>
+            <h3 class="text-lg text-gray-600 mb-4">Written by Jane Doe on 2024-01-20</h3>
+            <div class="flex flex-wrap gap-3 mb-6">
+                <span class="px-3 py-1 bg-orange-400 text-white rounded-full text-xs hover:bg-orange-300"><a href="#">Citrus</a></span>
+                <span class="px-3 py-1 bg-red-400 text-white rounded-full text-xs hover:bg-red-300"><a href="#">Berries</a></span>
+                <span class="px-3 py-1 bg-green-400 text-white rounded-full text-xs hover:bg-green-300"><a href="#">Tropical</a></span>
+            </div>
+            <img src="images/fruit-image1.png" alt="Fruit Image" class="w-full h-auto rounded-xl shadow-lg mb-6" />
+            <p class="my-4 text-gray-700">Fruits are an essential part of a healthy diet. They provide vital nutrients and vitamins that support overall health. In 2024, some of the best fruits to include in your diet are citrus fruits like oranges and grapefruits, which are rich
+                in vitamin C. Berries, such as strawberries and blueberries, offer antioxidants and are great for heart health. Tropical fruits like mangoes and pineapples are not only delicious but also packed with vitamins and minerals.</p>
+
+            <p class="my-4 text-gray-700">Eating a variety of fruits can help you maintain a balanced diet. Citrus fruits can boost your immune system, while berries can improve cognitive function and support heart health. Tropical fruits provide energy and aid in digestion. It's
+                important to enjoy a range of fruits to get the most benefit from their unique nutrients and flavors.</p>
+
+            <p class="my-4 text-gray-700">Remember to choose fresh, in-season fruits for the best taste and nutritional value. You can enjoy fruits on their own or incorporate them into your meals and snacks. Whether you prefer a refreshing citrus salad or a smoothie packed with berries
+                and tropical fruits, there are plenty of ways to enjoy these nutritious foods.</p>
+
+            <p class="my-4 text-gray-700">Incorporating fruits into your diet doesn't have to be complicated. Start by adding a serving of fruit to your breakfast, snack on fruit throughout the day, and experiment with different fruit-based recipes. By making fruits a regular part
+                of your diet, you'll be supporting your health and enjoying delicious flavors at the same time.</p>
+        </article>
+    </section>
+
+    <footer class="bg-gradient-to-r from-green-600 via-teal-500 to-blue-400 text-white">
+        <div class="container mx-auto mt-10 max-w-screen-xl px-8">
+            <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="mt-10">
+                    <h3 class="text-xl font-semibold mb-4">About</h3>
+                    <p class="text-white text-sm">Fruit Lovers is a blog dedicated to everything about fruits. We share articles, recipes, and tips for incorporating fruits into your diet and exploring new fruit varieties.</p>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl font-semibold mb-4">Categories</h3>
+                    <ul class="text-white text-sm space-y-2">
+                        <li>
+                            <a href="#">Citrus</a>
+                        </li>
+                        <li>
+                            <a href="#">Berries</a>
+                        </li>
+                        <li>
+                            <a href="#">Tropical</a>
+                        </li>
+                        <li>
+                            <a href="#">Stone Fruits</a>
+                        </li>
+                        <li>
+                            <a href="#">Melons</a>
+                        </li>
+                        <li>
+                            <a href="#">Exotic</a>
+                        </li>
+                        <li>
+                            <a href="#">Seasonal</a>
+                        </li>
+                        <li>
+                            <a href="#">Recipes</a>
+                        </li>
+                        <li>
+                            <a href="#">Nutrition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="text-white text-sm space-y-2">
+                        <li>
+                            <a href="#">Email</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

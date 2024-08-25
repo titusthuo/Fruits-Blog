@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js" integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Fruit Lovers Blog</title>
+    <style>
+        /* Custom Styles */
+        
+        .bg-primary {
+            background-color: #ff6f61;
+            /* Coral */
+        }
+        
+        .bg-secondary {
+            background-color: #ffe5d9;
+            /* Peach */
+        }
+        
+        .text-primary {
+            color: #fff;
+            /* White */
+        }
+        
+        .text-secondary {
+            color: #333;
+            /* Dark Gray */
+        }
+        
+        .hover\:bg-hover:hover {
+            background-color: #ff9a8b;
+            /* Light Coral */
+        }
+        
+        .hover\:text-hover:hover {
+            color: #ff6f61;
+            /* Coral */
+        }
+        
+        .about-paragraph {
+            color: #fff;
+            /* White */
+            background-color: #2d3748;
+            /* Dark Gray */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .footer-categories {
+            text-align: center;
+        }
+        
+        .footer-contact {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary text-secondary">
+    <nav class="bg-primary text-primary">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/logo.png" class="h-14" alt="Fruit Lovers Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap"><span class="text-yellow-300">Fruit</span>Lovers</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 17 14"
+                >
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15"
+                    />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-200 text-primary rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-500">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 text-primary rounded md:p-0 hover:bg-hover hover:text-primary" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="articles.html" class="block py-2 px-3 text-primary rounded md:p-0 hover:bg-hover hover:text-primary">All Articles</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 px-3 text-primary rounded md:p-0 hover:bg-hover hover:text-primary">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mx-auto max-w-screen-lg mt-10 px-8">
+        <div class="flex flex-col items-center justify-items-center gap-7">
+            <img src="./images/error-404.png" alt="" width="250" height="250" class="mt-10">
+            <h1 class="text-5xl font-bold">Page Not Found</h1>
+            <p class="text-2xl mb-10">
+                Sorry, we couldn't find the page you were looking for.
+            </p>
+            <a href="index.html" class="inline-block bg-primary text-primary p-3 mb-6 rounded-lg shadow-lg hover:bg-hover">Go Back Home</a>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-primary py-8">
+        <div class="container mx-auto max-w-screen-xl px-8">
+            <div class="footer-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- About Section -->
+                <div class="flex items-center justify-center lg:justify-start">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-center lg:text-left">About</h3>
+                        <p class="about-paragraph">
+                            Fruit Lovers is a blog dedicated to all things fruit. We publish articles, stories, and recipes featuring the best and freshest fruits from around the world.
+                        </p>
+                    </div>
+                </div>
+                <!-- Categories Section -->
+                <div class="footer-categories">
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="text-primary text-base space-y-2">
+                        <li><a href="#" class="hover:text-hover">Tropical Fruits</a></li>
+                        <li><a href="#" class="hover:text-hover">Berries</a></li>
+                        <li><a href="#" class="hover:text-hover">Citrus Fruits</a></li>
+                        <li><a href="#" class="hover:text-hover">Stone Fruits</a></li>
+                        <li><a href="#" class="hover:text-hover">Exotic Fruits</a></li>
+                        <li><a href="#" class="hover:text-hover">Dried Fruits</a></li>
+                        <li><a href="#" class="hover:text-hover">Melons</a></li>
+                        <li><a href="#" class="hover:text-hover">Apple Varieties</a></li>
+                        <li><a href="#" class="hover:text-hover">Bananas</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact</h3>
+                        <ul class="text-primary text-base space-y-2">
+                            <li><a href="#" class="hover:text-hover">Email</a></li>
+                            <li><a href="#" class="hover:text-hover">Twitter</a></li>
+                            <li><a href="#" class="hover:text-hover">Facebook</a></li>
+                            <li><a href="#" class="hover:text-hover">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
